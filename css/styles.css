@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* reseteo */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block: 0;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+:target {
+  scroll-margin-block: 5ex;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Estilos globales */
+:root {
+  --background-main: whitesmoke;
+  --text-main: #121212;
+  --ff-main: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--background-main);
+  color: var(--text-main);
+  font-family: var(--ff-main);
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header-principal {
+  width: 100%;
+  min-height: 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-principal ul > li > a {
+  font-weight: 500;
+  color: black;
+}
+.logo-principal {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.text-carrusel {
+  text-align: center;
+  font-weight: 400;
+  font-size: 3rem;
+}
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.carrusel-principal {
+  width: 100%;
+  overflow: hidden;
+}
+.carousel {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.carousel-inner {
+  width: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+.footer {
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 10px;
+  background-color: #121212;
+  color: white;
+}
+/* utilidades */
+.wrapper {
+  max-width: 1130px;
+  margin: 0 auto;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
